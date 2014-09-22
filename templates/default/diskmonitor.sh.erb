@@ -1,0 +1,12 @@
+#!/bin/bash
+# Quick And Dirty Disk Monitoring Utility
+# Get this host's UUID
+thisUUID=`xe host-list name-label=$HOSTNAME params=uuid --minimal`
+# Threshold of disk usage to report on
+threshold=75    # an example of how much disk can be used before alerting
+# Get disk usage
+diskUsage=`df -h | grep "/$" | head -n 1 | awk {' print $5 '} | sed -n -e "s/%//p"`
+# Check
+if [ $diskUsage -gt $threshold ]; then
+     xe message-create host-uuid=$thisUUID name="ROOT DISK USAGE" body="Disk space use has exceeded $diskUsage on `echo $HOSTNAME`!" priority="1"
+fi
