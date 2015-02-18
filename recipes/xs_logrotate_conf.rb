@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: xs_maintenance
-# Recipe:: hotfix-XS62ESP1008
+# Recipe:: xs_logrotate_conf
 #
 # Copyright (C) 2014 Todd Pigram
 #
@@ -16,22 +16,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-bash "install XS62ESP1008" do
-  user "root"
-  cwd "/tmp"
-  code <<-EOH
-  mkdir -p /tmp/hotfixes
-  cd /tmp/hotfixes
 
-  wget http://downloadns.citrix.com.edgesuite.net/9491/XS62ESP1008.zip
-  unzip XS62ESP1008.zip
-
-  . /etc/xensource-inventory
-
-  PATCHUUID=$(xe patch-upload file-name=XS62ESP1008.xsupdate)
-  xe patch-pool-apply uuid=${PATCHUUID}
-
-  xe patch-clean uuid=${PATCHUUID}
-  EOH
-  not_if {::File.exists?(node['hf']['1008'])}
+template "/etc/logrotate.conf" do
+  source "logrotate.conf.erb"
+  owner "root"
+  group "root"
+  mode "0755"
 end
+
+
+
+

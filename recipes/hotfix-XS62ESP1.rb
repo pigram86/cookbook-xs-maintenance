@@ -34,4 +34,5 @@ bash "install XS62ESP1" do
 
   xe patch-clean uuid=${PATCHUUID}
   EOH
+  not_if {::File.exists?(node['hf']['sp1'])}
 end

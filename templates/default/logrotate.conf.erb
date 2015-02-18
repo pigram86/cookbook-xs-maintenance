@@ -1,0 +1,38 @@
+# see "man logrotate" for details
+# CA-53139: rotate log files daily
+daily
+# CA-53139: compress old logfiles.
+compress
+
+# NOTE: removal of excess logs is done by script
+rotate 10
+
+# rotate log files over 5MB by default
+size 5M
+
+# create new (empty) log files after rotating old ones
+create
+
+# uncomment this if you want your log files compressed
+compress
+
+# RPM packages drop log rotation information into this directory
+include /etc/logrotate.d
+
+# no packages own wtmp -- we'll rotate them here
+/var/log/wtmp {
+    monthly
+    minsize 1M
+    create 0664 root utmp
+    rotate 6
+}
+
+/var/log/btmp {
+    missingok
+    monthly
+    minsize 1M
+    create 0600 root utmp
+    rotate 1
+}
+
+# system-specific logs may be also be configured here.
