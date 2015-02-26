@@ -102,6 +102,10 @@ hotfix-XS62ESP1017.rb
 * XenServer 6.5 Patches
 =======================
 
+hotfix-XS65E001.rb
+------------------
+# Server side XenCenter
+
 hotfix-XS65E002.rb
 ------------------
 ## XenTools (PV Drivers) Fix
@@ -199,6 +203,7 @@ Attributes
 * default['hf']['1017'] = "/var/patch/applied/902607f2-6186-464b-bcb8-86559602ab58"
 
 * #XenServer 6.5 Hotfixes
+* default['hf']['001'] = "/var/patch/applied/9f9d57ff-3a04-4385-9744-f961b44a1db4"
 * default['hf']['002'] = "/var/patch/applied/0fedb090-7d7a-4dce-afac-34d56d4c9aff"
 * default['hf']['003'] = "/var/patch/applied/5200911d-5f79-4149-abca-0556af77b14d"
 
