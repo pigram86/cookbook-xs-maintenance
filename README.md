@@ -245,7 +245,7 @@ Include `xs_maintenance` in your node's `run_list`:
 ```json
  {
   "run_list": [
-    "recipe[win_srv_default::default]"
+    "recipe[xs_maintenance::default]"
    ]
  }
  ```
