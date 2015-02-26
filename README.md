@@ -238,7 +238,7 @@ setupxenserver.sh.erb
 Usage
 =====
 
-Depending on the version of assign the appropiate recipes to the nodes run list. I left reboots out of the recipes as to handle that manually
+Depending on the version of XenServer assign the appropiate recipes to the nodes run list. I left reboots out of the recipes as to handle that manually
 
 Include `xs_maintenance` in your node's `run_list`:
 
