@@ -44,6 +44,7 @@ Each patch has its own recipe in the following format. Using attributes for idem
 
 
 * XenServer 6.1 Patches
+=======================
 
 hotfix-XS61E030.rb
 ------------------
@@ -70,6 +71,7 @@ hotfix-XS61E045.rb
 ------------------
 
 * XenServer 6.2 Patches
+=======================
 
 hotfix-XS62ESP1.rb
 ------------------
@@ -98,6 +100,7 @@ hotfix-XS62ESP1017.rb
 ### CVE Ghost
 
 * XenServer 6.5 Patches
+=======================
 
 hotfix-XS65E002.rb
 ------------------
@@ -109,6 +112,7 @@ hotfix-XS65E003.rb
 ### CVE Ghost
 
 * Maintenance
+==============
 
 hotfixCleanup.rb
 ----------------
@@ -156,6 +160,7 @@ rootdiskmaintenance.rb
 * end
 
 * In development
+================
 
 xs_logrotate_conf.rb
 --------------------
