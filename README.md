@@ -20,7 +20,7 @@ Cookbooks
 Recipes
 =======
 
-Each patch has its one recipe in the following format. Using attributes for idempotence.
+Each patch has its own recipe in the following format. Using attributes for idempotence.
 
 * bash "install XS61E030" do
 *  user "root"
