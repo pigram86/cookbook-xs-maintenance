@@ -99,6 +99,13 @@ hotfix-XS62ESP1017.rb
 ---------------------
 ### CVE Ghost
 
+hotfix-XS62ESP1019.rb
+---------------------
+### Contains XS62ESP1002, XS62ESP1004, XS62ESP1008, XS62ESP1011, XS62ESP1013, XS62ESP1015, XS62ESP1016
+### CVE-2015-2044 (Medium): Information leak via internal x86 system device emulation
+### CVE-2015-2045 (Medium): Information leak through version information hypercall
+### CVE-2015-2151 (Medium): Hypervisor memory corruption due to x86 emulator flaw
+
 * XenServer 6.5 Patches
 =======================
 
@@ -110,6 +117,19 @@ hotfix-XS65E002.rb
 ------------------
 ## XenTools (PV Drivers) Fix
 
+hotfix-XS65E003.rb
+------------------
+### CVE Ghost
+
+hotfix-XS65E005.rb
+------------------
+## Using space reclamation feature (TRIM/UNMAP) on LUNs that are larger than 2TB can result in data corruption. In XenCenter, this feature is labelled 'Reclaim freed space' on the host's Storage tab.
+
+hotfix-XS65E006.rb
+------------------
+### CVE-2015-2044 (Medium): Information leak via internal x86 system device emulation
+### CVE-2015-2045 (Medium): Information leak through version information hypercall
+### CVE-2015-2151 (Medium): Hypervisor memory corruption due to x86 emulator flaw
 
 hotfix-XS65E003.rb
 ------------------
