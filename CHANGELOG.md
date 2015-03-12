@@ -11,3 +11,6 @@ Added in the CVE Ghost frixes for XS62SP1 & XS65
 
 # 1.0.1
 Added in XS62 Patch 19 & Added in XS65 005 & 006. Updated README.md
+
+# 1.0.2
+Added to README.md

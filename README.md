@@ -221,11 +221,15 @@ Attributes
 * default['hf']['1015'] = "/var/patch/applied/f4f66d0a-d408-446e-a014-8e793baccb07"
 * default['hf']['1016'] = "/var/patch/applied/55444a02-4d97-4d6d-b076-ddbe8697244b"
 * default['hf']['1017'] = "/var/patch/applied/902607f2-6186-464b-bcb8-86559602ab58"
+* default['hf']['1019'] = "/var/patch/applied/f735af04-069f-4cf0-b80a-795c178c94a8"
 
 * #XenServer 6.5 Hotfixes
 * default['hf']['001'] = "/var/patch/applied/9f9d57ff-3a04-4385-9744-f961b44a1db4"
 * default['hf']['002'] = "/var/patch/applied/0fedb090-7d7a-4dce-afac-34d56d4c9aff"
 * default['hf']['003'] = "/var/patch/applied/5200911d-5f79-4149-abca-0556af77b14d"
+* default['hf']['005'] = "/var/patch/applied/492ca007-bf7b-454f-8e5c-63a991a52449"
+* default['hf']['006'] = "/var/patch/applied/30d3992b-ac0a-45e8-9e93-d4b2e9bb235f"
+
 
 * #XenServer 6.1 Hotfixes
 * default['hf']['043'] = "/var/patch/applied/f741fd18-3331-446a-8263-9c01b0799cc3"
