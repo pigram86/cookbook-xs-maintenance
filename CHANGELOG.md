@@ -14,3 +14,6 @@ Added in XS62 Patch 19 & Added in XS65 005 & 006. Updated README.md
 
 # 1.0.2
 Added to README.md
+
+# 1.0.3
+Added in XS61 CVE patch

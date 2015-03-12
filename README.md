@@ -70,6 +70,13 @@ hotfix-XS61E044.rb
 hotfix-XS61E045.rb
 ------------------
 
+hotfix-XS61E50.rb
+-----------------
+## Includes XS61E003, XS61E004, XS61E006, XS61E009, XS61E012, XS61E013, XS61E017, XS61E019, XS61E020, XS61E022, XS61E024, XS61E026, XS61E027, XS61E032, XS61E033, XS61E036, XS61E037, XS61E041, XS61E043, XS61E045, XS61E046
+### CVE-2015-2044 (Medium): Information leak via internal x86 system device emulation
+### CVE-2015-2045 (Medium): Information leak through version information hypercall
+### CVE-2015-2151 (Medium): Hypervisor memory corruption due to x86 emulator flaw
+
 * XenServer 6.2 Patches
 =======================
 
@@ -223,6 +230,7 @@ Attributes
 * default['hf']['1017'] = "/var/patch/applied/902607f2-6186-464b-bcb8-86559602ab58"
 * default['hf']['1019'] = "/var/patch/applied/f735af04-069f-4cf0-b80a-795c178c94a8"
 
+
 * #XenServer 6.5 Hotfixes
 * default['hf']['001'] = "/var/patch/applied/9f9d57ff-3a04-4385-9744-f961b44a1db4"
 * default['hf']['002'] = "/var/patch/applied/0fedb090-7d7a-4dce-afac-34d56d4c9aff"
@@ -240,6 +248,7 @@ Attributes
 * default['hf']['041'] = "/var/patch/applied/"
 * default['hf']['044'] = "/var/patch/applied/946d4291-ed24-4330-ac06-3b4e4e5b75f8"
 * default['hf']['045'] = "/var/patch/applied/37a73ca4-c1db-4307-8144-7020e072e5e4"
+* default['hf']['050'] = "/var/patch/applied/3082d621-eae5-4d79-81f0-86d995c87b83"
 
 * # Logrotate
 * default['setup43']['path'] = "/usr/share/cloudstack-common/scripts/vm/hypervisor/xenserver/"

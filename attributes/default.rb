@@ -50,6 +50,7 @@ default['hf']['040'] = "/var/patch/applied/"
 default['hf']['041'] = "/var/patch/applied/"
 default['hf']['044'] = "/var/patch/applied/946d4291-ed24-4330-ac06-3b4e4e5b75f8"
 default['hf']['045'] = "/var/patch/applied/37a73ca4-c1db-4307-8144-7020e072e5e4"
+default['hf']['050'] = "/var/patch/applied/3082d621-eae5-4d79-81f0-86d995c87b83"
 
 # Logrotate
 default['setup43']['path'] = "/usr/share/cloudstack-common/scripts/vm/hypervisor/xenserver/"
