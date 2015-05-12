@@ -20,3 +20,6 @@ Added in XS61 CVE patch
 
 #1.0.9
 Added in XS65 SP1
+
+#1.1.0
+Updated README.md
