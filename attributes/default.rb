@@ -59,3 +59,6 @@ default['setup42']['path'] = "/usr/lib64/cloud/agent/scripts/vm/hypervisor/xense
 default['setup']['xs62'] = "/opt/cloud/bin/"
 default['setup']['xs61'] = "/opt/xensource/bin/"
 
+# XS65 SP1 & Post SP1 Hotfixes
+default['xs65']['sp1'] = "/var/patch/applied/7f2e4a3a-4098-4a71-84ff-b0ba919723c7"
+

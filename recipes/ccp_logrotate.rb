@@ -16,3 +16,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+template "#{node['setup43']['path']}/setupxenserver.sh" do
+  source 'setupxenserver.sh.erb'
+  owner 'root'
+  group 'root'
+  mode '0755'
+end

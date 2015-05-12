@@ -29,7 +29,7 @@ bash "install XS62ESP1019" do
   mkdir -p /tmp/hotfixes
   cd /tmp/hotfixes
 
-  wget http://downloadns.citrix.com.edgesuite.net/10206/XS62ESP1019.zip
+  wget https://dl.dropboxusercontent.com/u/36379525/XS62ESP1019.zip
   unzip XS62ESP1019.zip
 
   . /etc/xensource-inventory

@@ -1,15 +1,8 @@
 #!/bin/sh
-
 /usr/sbin/logrotate /etc/logrotate-hourly.conf
-
 EXITVALUE=$?
-
 if [ $EXITVALUE != 0 ]; then
-
 /usr/bin/logger -t logrotate "ALERT exited abnormally with [$EXITVALUE]"
-
 fi
-
 /opt/xensource/bin/delete_old_logs_by_space
-
 exit 0

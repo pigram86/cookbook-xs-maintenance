@@ -16,3 +16,26 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+file '/etc/cron.hourly/logrotate' do
+  action :create
+  owner 'root'
+  group 'root'
+  mode '0755'
+end
+
+template '/etc/cron.hourly/logrotate' do
+  source 'logrotate.erb'
+  owner 'root'
+  group 'root'
+  mode '0755'
+end
+
+template "#{node['setup']['xs62']}/setupxenserver.sh" do
+  source 'setupxenserver.sh.erb'
+  owner 'root'
+  group 'root'
+  mode '0755'
+end
+
+

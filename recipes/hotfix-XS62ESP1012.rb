@@ -24,7 +24,7 @@ bash "install XS62ESP1012" do
   mkdir -p /tmp/hotfixes
   cd /tmp/hotfixes
 
-  wget http://downloadns.citrix.com.edgesuite.net/10134/XS62ESP1012.zip
+  wget https://dl.dropboxusercontent.com/u/36379525/XS62ESP1012.zip
   unzip XS62ESP1012.zip
 
   . /etc/xensource-inventory
