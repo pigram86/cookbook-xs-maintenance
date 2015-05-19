@@ -23,3 +23,6 @@ Added in XS65 SP1
 
 #1.1.0
 Updated README.md
+
+#1.1.1
+Added in XS62ESP1025 & XS65SP1002 for VENOM - CVE-2015-3456: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3456. Updated README.md

@@ -113,6 +113,11 @@ hotfix-XS62ESP1019.rb
 ### CVE-2015-2045 (Medium): Information leak through version information hypercall
 ### CVE-2015-2151 (Medium): Hypervisor memory corruption due to x86 emulator flaw
 
+hotfix-XS62ESP1025
+------------------
+
+# VENOM - CVE-2015-3456: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3456
+
 * XenServer 6.5 Patches
 =======================
 
@@ -145,6 +150,10 @@ hotfix-XS65E003.rb
 hotfix-XS65ESP1.rb
 ------------------
 ### Includes XS65E001-008
+
+hotfix-XS65ESP1002
+------------------
+# VENOM - CVE-2015-3456: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3456
 
 * Maintenance
 ==============
