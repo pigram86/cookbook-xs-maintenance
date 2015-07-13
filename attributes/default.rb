@@ -34,6 +34,9 @@ default['hf']['1016'] = "/var/patch/applied/55444a02-4d97-4d6d-b076-ddbe8697244b
 default['hf']['1017'] = "/var/patch/applied/902607f2-6186-464b-bcb8-86559602ab58"
 default['hf']['1019'] = "/var/patch/applied/f735af04-069f-4cf0-b80a-795c178c94a8"
 default['xs62sp1']['025'] = "/var/patch/applied/f359f49e-0c5a-4e38-8da0-9f550dab5f64"
+default['xs62sp1']['026'] = "/var/patch/applied/d1d24e6c-b838-4dc0-a967-61d6b867b72a"
+default['xs62sp1']['027'] = "/var/patch/applied/06b86256-274d-444e-aa08-a635717e68d1"
+default['xs62sp1']['028'] = "/var/patch/applied/063c699a-dac0-4276-a486-7fb69a23a449"
 
 #XenServer 6.5 Hotfixes
 default['hf']['001'] = "/var/patch/applied/9f9d57ff-3a04-4385-9744-f961b44a1db4"
@@ -63,4 +66,7 @@ default['setup']['xs61'] = "/opt/xensource/bin/"
 # XS65 SP1 & Post SP1 Hotfixes
 default['xs65']['sp1'] = "/var/patch/applied/7f2e4a3a-4098-4a71-84ff-b0ba919723c7"
 default['xs65sp1']['002'] = "/var/patch/applied/2e1518ec-e536-4ef7-a106-6f50ce56da5a"
+default['xs65sp1']['004'] = "/var/patch/applied/b4814859-81ae-4ad9-9da9-7bf74737db05"
+default['xs65sp1']['003'] = "/var/patch/applied/3a7f4772-3039-40ad-a56d-29917b005d26"
+default['xs65sp1']['005'] = "/var/patch/applied/fe594bba-a0f7-4643-9429-8443d3a9e018"
 

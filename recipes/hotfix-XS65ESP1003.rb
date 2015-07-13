@@ -1,8 +1,8 @@
 #
 # Cookbook Name:: xs_maintenance
-# Recipe:: hotfix-XS62ESP1025
+# Recipe:: hotfix-XS62ESP1003
 #
-# Copyright (C) 2015 Todd Pigram
+# Copyright (C) 2014 Todd Pigram
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,24 +17,24 @@
 # limitations under the License.
 #
 
-# VENOM - CVE-2015-3456: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3456
+# Need to install new XenTools
 
-bash "install XS62ESP1025" do
+bash "install XS65ESP1003" do
   user "root"
   cwd "/tmp"
   code <<-EOH
   mkdir -p /tmp/hotfixes
   cd /tmp/hotfixes
 
-  wget http://downloadns.citrix.com.edgesuite.net/10564/XS62ESP1025.zip
-  unzip XS62ESP1025.zip
+  wget http://downloadns.citrix.com.edgesuite.net/10597/XS65ESP1003.zip
+  unzip XS65ESP1003.zip
 
   . /etc/xensource-inventory
 
-  PATCHUUID=$(xe patch-upload file-name=XS62ESP1025.xsupdate)
+  PATCHUUID=$(xe patch-upload file-name=XS65ESP1003.xsupdate)
   xe patch-pool-apply uuid=${PATCHUUID}
 
   xe patch-clean uuid=${PATCHUUID}
   EOH
-  not_if {::File.exists?(node['xs62sp1']['025'])}
+  not_if {::File.exists?(node['xs65sp1']['003'])}
 end

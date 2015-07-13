@@ -26,3 +26,9 @@ Updated README.md
 
 #1.1.1
 Added in XS62ESP1025 & XS65SP1002 for VENOM - CVE-2015-3456: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3456. Updated README.md
+
+#1.1.3
+Added in XS62ESP1026, XS62ESP1027, & XS65ESP1004 - http://support.citrix.com/article/CTX201145 CVE issues.
+
+#1.1.4
+Added XS62ESP1028, XS65ESP1003 & XS65ESP1005 - XS62ESP1028 & XS65ESP1003 require XenTool upgrade
