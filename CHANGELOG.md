@@ -32,3 +32,6 @@ Added in XS62ESP1026, XS62ESP1027, & XS65ESP1004 - http://support.citrix.com/art
 
 #1.1.4
 Added XS62ESP1028, XS65ESP1003 & XS65ESP1005 - XS62ESP1028 & XS65ESP1003 require XenTool upgrade
+
+#1.1.5
+Added in XS62ESP1031 & XS65ESP1008. Updated README.md

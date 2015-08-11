@@ -1,8 +1,8 @@
 #
 # Cookbook Name:: xs_maintenance
-# Recipe:: hotfix-XS61E040
+# Recipe:: hotfix-XS62ESP1008
 #
-# Copyright (C) 2014 Todd Pigram, All Rights Reserved.
+# Copyright (C) 2014 Todd Pigram
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,22 +16,42 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-bash "install XS61E040" do
+
+# Includes XS65E009, XS65E010, XS65ESP1002, XS65ESP1004
+
+bash "install XS65ESP1008" do
   user "root"
   cwd "/tmp"
   code <<-EOH
   mkdir -p /tmp/hotfixes
   cd /tmp/hotfixes
 
-  wget http://downloadns.citrix.com.edgesuite.net/9489/XS61E040.zip
-  unzip XS61E040.zip
+  wget https://support.citrix.com/filedownload/CTX201637/XS65ESP1008.zip
+  unzip XS65ESP1008.zip
 
   . /etc/xensource-inventory
 
-  PATCHUUID=$(xe patch-upload file-name=XS61E040.xsupdate)
+  PATCHUUID=$(xe patch-upload file-name=XS65ESP1008.xsupdate)
   xe patch-pool-apply uuid=${PATCHUUID}
 
   xe patch-clean uuid=${PATCHUUID}
   EOH
-  not_if {::File.exists?(node['hf']['040'])}
+  not_if {::File.exists?(node['xs65sp1']['008'])}
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

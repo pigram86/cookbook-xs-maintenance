@@ -1,8 +1,8 @@
 #
 # Cookbook Name:: xs_maintenance
-# Recipe:: hotfix-XS61E040
+# Recipe:: diskcleanup
 #
-# Copyright (C) 2014 Todd Pigram, All Rights Reserved.
+# Copyright (C) 2015 Todd Pigram, All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,22 +16,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-bash "install XS61E040" do
-  user "root"
-  cwd "/tmp"
-  code <<-EOH
-  mkdir -p /tmp/hotfixes
-  cd /tmp/hotfixes
 
-  wget http://downloadns.citrix.com.edgesuite.net/9489/XS61E040.zip
-  unzip XS61E040.zip
+# Cron job to delete all the compressed log files.
 
-  . /etc/xensource-inventory
-
-  PATCHUUID=$(xe patch-upload file-name=XS61E040.xsupdate)
-  xe patch-pool-apply uuid=${PATCHUUID}
-
-  xe patch-clean uuid=${PATCHUUID}
-  EOH
-  not_if {::File.exists?(node['hf']['040'])}
+cron 'diskcleanup' do
+  hour '3'
+  minute '0'
+  weekday '0'
+  command 'rm -rf /var/log/*.gz'
 end

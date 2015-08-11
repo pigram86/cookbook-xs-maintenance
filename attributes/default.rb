@@ -2,7 +2,7 @@
 # Cookbook Name:: xs_maintenance
 # Recipe:: default
 #
-# Copyright (C) 2014 Todd Pigram
+# Copyright (C) 2014 Todd Pigram, All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -37,6 +37,7 @@ default['xs62sp1']['025'] = "/var/patch/applied/f359f49e-0c5a-4e38-8da0-9f550dab
 default['xs62sp1']['026'] = "/var/patch/applied/d1d24e6c-b838-4dc0-a967-61d6b867b72a"
 default['xs62sp1']['027'] = "/var/patch/applied/06b86256-274d-444e-aa08-a635717e68d1"
 default['xs62sp1']['028'] = "/var/patch/applied/063c699a-dac0-4276-a486-7fb69a23a449"
+default['xs62sp1']['031'] = "/var/patch/applied/9cc012c5-7e2f-4ac7-b8da-31133c157999"
 
 #XenServer 6.5 Hotfixes
 default['hf']['001'] = "/var/patch/applied/9f9d57ff-3a04-4385-9744-f961b44a1db4"
@@ -69,4 +70,5 @@ default['xs65sp1']['002'] = "/var/patch/applied/2e1518ec-e536-4ef7-a106-6f50ce56
 default['xs65sp1']['004'] = "/var/patch/applied/b4814859-81ae-4ad9-9da9-7bf74737db05"
 default['xs65sp1']['003'] = "/var/patch/applied/3a7f4772-3039-40ad-a56d-29917b005d26"
 default['xs65sp1']['005'] = "/var/patch/applied/fe594bba-a0f7-4643-9429-8443d3a9e018"
+default['xs65sp1']['008'] = "/var/patch/applied/d91b3557-f1bf-4083-bd6f-80a19d983775"
 

@@ -115,8 +115,23 @@ hotfix-XS62ESP1019.rb
 
 hotfix-XS62ESP1025
 ------------------
-
 # VENOM - CVE-2015-3456: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3456
+
+hotfix-XS62ESP1026
+------------------
+
+hotfix-XS62ESP1027
+------------------
+# CVE-2015-4106, CVE-2015-4163, CVE-2015-4164, CVE-2015-2756, CVE-2015-4103, CVE-2015-4104, CVE-2015-4105
+
+hotfix-XS62ESP1028
+------------------
+# Requires XenTools Update
+
+hotfix-XS62ESP1031
+------------------
+# Includes the following Hotfixes - XS62E014, XS62ESP1002, XS62ESP1004, XS62ESP1008, XS62ESP1011, XS62ESP1013, XS62ESP1015, XS62ESP1016, XS62ESP1019, XS62ESP1021, XS62ESP1025, XS62ESP1026, XS62ESP1027, XS62ESP1030
+
 
 * XenServer 6.5 Patches
 =======================
@@ -155,8 +170,32 @@ hotfix-XS65ESP1002
 ------------------
 # VENOM - CVE-2015-3456: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3456
 
+hotfix-XS65ESP1003
+------------------
+# Need to install new XenTools
+
+hotfix-XS65ESP1004
+------------------
+# CVE-2015-4106, CVE-2015-4163, CVE-2015-4164, CVE-2015-2756, CVE-2015-4103, CVE-2015-4104, CVE-2015-4105
+
+hotfix-XS65ESP1005
+------------------
+
+hotfix-XS65ESP1008
+------------------
+# Includes XS65E009, XS65E010, XS65ESP1002, XS65ESP1004
+
 * Maintenance
 ==============
+
+diskcleanup.rb
+--------------
+* cron 'diskcleanup' do
+*   hour '3'
+*   minute '0'
+*   weekday '0'
+*   command 'rm -rf /var/log/*.gz'
+* end
 
 hotfixCleanup.rb
 ----------------
